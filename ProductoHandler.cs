@@ -24,8 +24,8 @@ namespace ProyectoFinal
 
                                 Prod.Id = Convert.ToInt32(dataReader["Id"]);
                                 Prod.Descripciones = dataReader["Descripciones"].ToString();
-                                Prod.Costo = Double.Parse(dataReader["Costo"]);
-                                Prod.PrecioVenta = Double.Parse(dataReader["PrecioVenta"]);
+                                Prod.Costo = Convert.ToDouble(dataReader["Costo"]);
+                                Prod.PrecioVenta = Convert.ToDouble(dataReader["PrecioVenta"]);
                                 Prod.Stock = Convert.ToInt32(dataReader["Stock"]);
                                 Prod.IdUsuario = Convert.ToInt32(dataReader["IdUsuario"]);
 
