@@ -1,9 +1,10 @@
 using System.Data.SqlClient;
+
 namespace ProyectoFinal
 {
     public class ProductoHandler : DbHandler
     {
-        public List<Producto> GetProductosVendidoo()
+        public List<Producto> GetProductosVendido()
         {
             List<Producto> resultado = new List<Producto>();
 
@@ -22,11 +23,11 @@ namespace ProyectoFinal
                                 Producto Prod = new Producto();
 
                                 Prod.Id = Convert.ToInt32(dataReader["Id"]);
-                                Prod.NombreUsuario = dataReader["NombreUsuario"].ToString();
-                                Prod.Nombre = dataReader["Nombre"].ToString();
-                                Prod.Apellido = dataReader["Apellido"].ToString();
-                                Prod.Contraseña = dataReader["Contraseña"].ToString();
-                                Prod.Mail = dataReader["Mail"].ToString();
+                                Prod.Descripciones = dataReader["Descripciones"].ToString();
+                                Prod.Costo = Double.Parse(dataReader["Costo"]);
+                                Prod.PrecioVenta = Double.Parse(dataReader["PrecioVenta"]);
+                                Prod.Stock = Convert.ToInt32(dataReader["Stock"]);
+                                Prod.IdUsuario = Convert.ToInt32(dataReader["IdUsuario"]);
 
                                 resultado.Add(Prod);
                             }

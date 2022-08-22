@@ -4,7 +4,7 @@ namespace ProyectoFinal
 {
     public class VentaHandler : DbHandler
     {
-        public List<Venta> GetProductosVendidoo()
+        public List<Venta> GetProductosVendido()
         {
             List<Venta> resultado = new List<Venta>();
 
@@ -23,11 +23,7 @@ namespace ProyectoFinal
                                 Venta vent = new Venta();
 
                                 vent.Id = Convert.ToInt32(dataReader["Id"]);
-                                vent.NombreUsuario = dataReader["NombreUsuario"].ToString();
-                                vent.Nombre = dataReader["Nombre"].ToString();
-                                vent.Apellido = dataReader["Apellido"].ToString();
-                                vent.Contraseña = dataReader["Contraseña"].ToString();
-                                vent.Mail = dataReader["Mail"].ToString();
+                                vent.Comentarios = dataReader["Comentarios"].ToString();
 
                                 resultado.Add(vent);
                             }

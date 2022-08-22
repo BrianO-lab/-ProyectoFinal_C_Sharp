@@ -13,3 +13,11 @@ C:\Users\Brian-Aorus\source\repos\ProyectoFinal\obj\Debug\net6.0\refint\Proyecto
 C:\Users\Brian-Aorus\source\repos\ProyectoFinal\obj\Debug\net6.0\ProyectoFinal.pdb
 C:\Users\Brian-Aorus\source\repos\ProyectoFinal\obj\Debug\net6.0\ProyectoFinal.genruntimeconfig.cache
 C:\Users\Brian-Aorus\source\repos\ProyectoFinal\obj\Debug\net6.0\ref\ProyectoFinal.dll
+C:\Users\Brian-Aorus\Documents\CoderHouse\C#\Final\ProyectoFinal_C_Sharp\obj\Debug\net6.0\ProyectoFinal.csproj.AssemblyReference.cache
+C:\Users\Brian-Aorus\Documents\CoderHouse\C#\Final\ProyectoFinal_C_Sharp\obj\Debug\net6.0\ProyectoFinal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brian-Aorus\Documents\CoderHouse\C#\Final\ProyectoFinal_C_Sharp\obj\Debug\net6.0\ProyectoFinal.AssemblyInfoInputs.cache
+C:\Users\Brian-Aorus\Documents\CoderHouse\C#\Final\ProyectoFinal_C_Sharp\obj\Debug\net6.0\ProyectoFinal.AssemblyInfo.cs
+C:\Users\Brian-Aorus\Documents\CoderHouse\C#\Final\ProyectoFinal_C_Sharp\obj\Debug\net6.0\ProyectoFinal.csproj.CoreCompileInputs.cache
+C:\Users\Brian-Aorus\Documents\CoderHouse\C#\Final\ProyectoFinal_C_Sharp\obj\Debug\net6.0\ProyectoFinal.dll
+C:\Users\Brian-Aorus\Documents\CoderHouse\C#\Final\ProyectoFinal_C_Sharp\obj\Debug\net6.0\refint\ProyectoFinal.dll
+C:\Users\Brian-Aorus\Documents\CoderHouse\C#\Final\ProyectoFinal_C_Sharp\obj\Debug\net6.0\ProyectoFinal.pdb

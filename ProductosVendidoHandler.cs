@@ -1,9 +1,10 @@
 using System.Data.SqlClient;
+
 namespace ProyectoFinal
 {
     public class ProductosVendidoHandler : DbHandler
     {
-        public List<ProductosVendido> GetProductosVendidoo()
+        public List<ProductosVendido> GetProductosVendido()
         {
             List<ProductosVendido> resultado = new List<ProductosVendido>();
 
@@ -22,11 +23,9 @@ namespace ProyectoFinal
                                 ProductosVendido prodVend = new ProductosVendido();
 
                                 prodVend.Id = Convert.ToInt32(dataReader["Id"]);
-                                prodVend.NombreUsuario = dataReader["NombreUsuario"].ToString();
-                                prodVend.Nombre = dataReader["Nombre"].ToString();
-                                prodVend.Apellido = dataReader["Apellido"].ToString();
-                                prodVend.Contraseña = dataReader["Contraseña"].ToString();
-                                prodVend.Mail = dataReader["Mail"].ToString();
+                                prodVend.Stock = Convert.ToInt32(dataReader["Stock"]);
+                                prodVend.IdProducto = Convert.ToInt32(dataReader["IdProducto"]);
+                                prodVend.IdVenta = Convert.ToInt32(dataReader["IdVenta"]);
 
                                 resultado.Add(prodVend);
                             }
@@ -36,10 +35,6 @@ namespace ProyectoFinal
                 }
             }
             return resultado;
-
         }
-
-
     }
-
 }

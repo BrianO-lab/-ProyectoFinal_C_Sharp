@@ -1,10 +1,10 @@
 using System.Data.SqlClient;
 
 namespace ProyectoFinal
+
 {
     public class UsuarioHandler : DbHandler
     {
-
         public List<Usuario> GetProductosVendidoo()
         {
             List<Usuario> resultado = new List<Usuario>();
@@ -38,10 +38,6 @@ namespace ProyectoFinal
                 }
             }
             return resultado;
-
         }
-
     }
-
-
 }
