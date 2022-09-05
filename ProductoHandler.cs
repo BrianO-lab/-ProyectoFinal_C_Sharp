@@ -4,7 +4,7 @@ namespace ProyectoFinal
 {
     public class ProductoHandler : DbHandler
     {
-        public List<Producto> GetProductosVendido()
+        public List<Producto> GetProducto()
         {
             List<Producto> resultado = new List<Producto>();
 

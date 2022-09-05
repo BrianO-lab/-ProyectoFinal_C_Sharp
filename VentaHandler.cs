@@ -4,7 +4,7 @@ namespace ProyectoFinal
 {
     public class VentaHandler : DbHandler
     {
-        public List<Venta> GetProductosVendido()
+        public List<Venta> GetVenta()
         {
             List<Venta> resultado = new List<Venta>();
 

@@ -5,7 +5,7 @@ namespace ProyectoFinal
 {
     public class UsuarioHandler : DbHandler
     {
-        public List<Usuario> GetProductosVendidoo()
+        public List<Usuario> GetUsuario()
         {
             List<Usuario> resultado = new List<Usuario>();
 
