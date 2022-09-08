@@ -10,7 +10,7 @@ namespace ProyectoFinal
 
             using (SqlConnection sqlConnection = new SqlConnection(ConnectionString))
             {
-                using (SqlCommand sqlCommand = new SqlCommand("SELECT * FROM Usuario", sqlConnection))
+                using (SqlCommand sqlCommand = new SqlCommand("SELECT * FROM ProductosVendido", sqlConnection))
                 {
                     sqlConnection.Open();
 
@@ -20,14 +20,14 @@ namespace ProyectoFinal
                         {
                             while (dataReader.Read())
                             {
-                                ProductosVendido prodVend = new ProductosVendido();
+                                ProductosVendido productosVendido = new ProductosVendido();
 
-                                prodVend.Id = Convert.ToInt32(dataReader["Id"]);
-                                prodVend.Stock = Convert.ToInt32(dataReader["Stock"]);
-                                prodVend.IdProducto = Convert.ToInt32(dataReader["IdProducto"]);
-                                prodVend.IdVenta = Convert.ToInt32(dataReader["IdVenta"]);
+                                productosVendido.Id = Convert.ToInt32(dataReader["Id"]);
+                                productosVendido.Stock = Convert.ToInt32(dataReader["Stock"]);
+                                productosVendido.IdProducto = Convert.ToInt32(dataReader["IdProducto"]);
+                                productosVendido.IdVenta = Convert.ToInt32(dataReader["IdVenta"]);
 
-                                resultado.Add(prodVend);
+                                resultado.Add(productosVendido);
                             }
                         }
                     }

@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 
 namespace ProyectoFinal
 {
-    internal class ProductosVendido
+    public class ProductosVendido
     {
         public int Id { get; set; }
         public int Stock { get; set; }

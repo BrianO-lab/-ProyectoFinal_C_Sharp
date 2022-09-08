@@ -20,16 +20,16 @@ namespace ProyectoFinal
                         {
                             while (dataReader.Read())
                             {
-                                Usuario usuar = new Usuario();
+                                Usuario usuario = new Usuario();
 
-                                usuar.Id = Convert.ToInt32(dataReader["Id"]);
-                                usuar.NombreUsuario = dataReader["NombreUsuario"].ToString();
-                                usuar.Nombre = dataReader["Nombre"].ToString();
-                                usuar.Apellido = dataReader["Apellido"].ToString();
-                                usuar.Contraseña = dataReader["Contraseña"].ToString();
-                                usuar.Mail = dataReader["Mail"].ToString();
+                                usuario.Id = Convert.ToInt32(dataReader["Id"]);
+                                usuario.NombreUsuario = dataReader["NombreUsuario"].ToString();
+                                usuario.Nombre = dataReader["Nombre"].ToString();
+                                usuario.Apellido = dataReader["Apellido"].ToString();
+                                usuario.Contraseña = dataReader["Contraseña"].ToString();
+                                usuario.Mail = dataReader["Mail"].ToString();
 
-                                resultado.Add(usuar);
+                                resultado.Add(usuario);
                             }
                         }
                     }

@@ -4,7 +4,7 @@ namespace ProyectoFinal
 {
     public class VentaHandler : DbHandler
     {
-        public List<Venta> GetVenta()
+        public List<Venta> GetVentas()
         {
             List<Venta> resultado = new List<Venta>();
 
@@ -20,12 +20,12 @@ namespace ProyectoFinal
                         {
                             while (dataReader.Read())
                             {
-                                Venta vent = new Venta();
+                                Venta venta = new Venta();
 
-                                vent.Id = Convert.ToInt32(dataReader["Id"]);
-                                vent.Comentarios = dataReader["Comentarios"].ToString();
+                                venta.Id = Convert.ToInt32(dataReader["Id"]);
+                                venta.Comentarios = dataReader["Comentarios"].ToString();
 
-                                resultado.Add(vent);
+                                resultado.Add(venta);
                             }
                         }
                     }
