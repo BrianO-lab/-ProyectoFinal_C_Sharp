@@ -1,7 +1,6 @@
 using System.Data.SqlClient;
 
 namespace ProyectoFinal
-
 {
     public class UsuarioHandler : DbHandler
     {
